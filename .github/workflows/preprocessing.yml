@@ -42,4 +42,4 @@ jobs:
         git config --local user.name "github-actions[bot]"
         git add preprocessing/winequality_preprocessing/*
         git commit -m "Update preprocessed data" || echo "No changes to commit"
-        git push
+        git push "https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref }}
