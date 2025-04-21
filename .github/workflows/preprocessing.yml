@@ -40,6 +40,6 @@ jobs:
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add winequality_preprocessing/*
+        git add preprocessing/winequality_preprocessing/*
         git commit -m "Update preprocessed data" || echo "No changes to commit"
         git push
